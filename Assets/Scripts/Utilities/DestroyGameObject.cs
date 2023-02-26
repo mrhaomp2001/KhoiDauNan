@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class DestroyGameObject : MonoBehaviour
 {
-    [SerializeField] private float destroyTime;
     [SerializeField] private Timer timer;
     [SerializeField] private bool destroyByTime;
     [SerializeField] private GameObject destroyEffect;
+
+    public Timer Timer { get => timer; set => timer = value; }
 
     private void Update()
     {
@@ -16,7 +17,7 @@ public class DestroyGameObject : MonoBehaviour
 
     private void DestroyThisObjectByTime()
     {
-        if (timer != null)
+        if (timer != null )
         {
             if (destroyByTime)
             {
@@ -31,6 +32,7 @@ public class DestroyGameObject : MonoBehaviour
     public void DestroyThisObject()
     {
         Destroy(this.gameObject);
+
         if (destroyEffect != null)
         {
             Instantiate(destroyEffect, transform.position, transform.rotation);

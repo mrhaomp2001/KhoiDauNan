@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,10 +14,38 @@ public class Player : MonoBehaviour
     [Header(" >> UI: ")]
     [SerializeField] private FixedJoystick fixedJoystick;
 
+    [Header(" >> Player bullet: ")]
+    [SerializeField] private Transform transformFirePoint;
+    [SerializeField] private GameObject pistonBullet;
+
     public float Hp { get => hp; set => hp = value; }
     public float Speed { get => speed; set => speed = value; }
 
     private void Update()
+    {
+        Die();
+        Movement();
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            shoot();
+        }
+    }
+
+    private void Die()
+    {
+        if (hp <= 0)
+        {
+            print("hết hp");
+            hp++;
+        }
+    }
+
+    public void shoot()
+    {
+        Instantiate(pistonBullet, transformFirePoint.position, transformFirePoint.rotation);
+    }
+
+    private void Movement()
     {
         if (fixedJoystick.Horizontal >= 0.3)
         {
@@ -48,7 +76,5 @@ public class Player : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, 0f);
         }
-
-
     }
 }

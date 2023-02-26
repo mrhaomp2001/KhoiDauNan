@@ -6,9 +6,15 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] private float runtime;
     [SerializeField] private bool isCompleted;
+    [SerializeField] private float timeTotal;
     [SerializeField] private UnityEvent unityEvent;
 
     public bool IsCompleted { get => isCompleted; set => isCompleted = value; }
+
+    private void Start()
+    {
+        setTime();
+    }
 
     private void Update()
     {
@@ -22,11 +28,9 @@ public class Timer : MonoBehaviour
         }
     }
 
-    public void setTime(float time)
+    public void setTime()
     {
-        runtime = Time.time + time;
+        runtime = Time.time + timeTotal;
         isCompleted = false;
     }
-
-
 }
