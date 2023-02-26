@@ -6,12 +6,18 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private int hp;
     [SerializeField] private DestroyGameObject destroyGameObject;
+    [SerializeField] private GameObject parentObject;
 
+    private void Start()
+    {
+        parentObject = transform.parent.gameObject;
+    }
     private void Update()
     {
         if(hp <= 0)
         {
             destroyGameObject.DestroyThisObject();
+            Destroy(parentObject);
         }
     }
 
