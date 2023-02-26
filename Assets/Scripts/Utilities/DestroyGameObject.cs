@@ -16,11 +16,14 @@ public class DestroyGameObject : MonoBehaviour
 
     private void DestroyThisObjectByTime()
     {
-        if (destroyByTime)
+        if (timer != null)
         {
-            if (timer.IsCompleted)
+            if (destroyByTime)
             {
-                DestroyThisObject();
+                if (timer.IsCompleted)
+                {
+                    DestroyThisObject();
+                }
             }
         }
     }
