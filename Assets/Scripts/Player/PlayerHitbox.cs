@@ -8,10 +8,12 @@ public class PlayerHitbox : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "EnemyBullet")
+        if (collision.CompareTag("EnemyBullet"))
         {
             player.Hp -= collision.GetComponent<EnemyBullet>().Dmg;
+            player.AnimPlayerHitbox.SetTrigger("hurt");
         }
+
     }
 
 

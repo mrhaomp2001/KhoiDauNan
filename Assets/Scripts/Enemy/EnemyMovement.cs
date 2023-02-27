@@ -8,22 +8,29 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rbEnemy;
     [SerializeField] private Transform transformEnemy;
     [SerializeField] private float speed;
+    [SerializeField] private bool canMove = false;
 
     [Header(" >> Move 2: ")]
     [SerializeField] private bool isMoveRight;
     [SerializeField] private bool isMoveUp;
 
-    private void Start()
-    {
-    }
+    public bool CanMove { get => canMove; set => canMove = value; }
 
     private void Update()
     {
-        Move2();
+
+        if (canMove)
+        {
+            Move2();
+        }
+        else
+        {
+            rbEnemy.velocity = new Vector2(0f, 0f);
+        }
 
     }
 
-    private void move()
+    private void Move()
     {
         float isMinus = Random.Range(-5, 5);
         // ben phai bi day nguoc lai

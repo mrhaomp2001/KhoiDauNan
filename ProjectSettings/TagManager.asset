@@ -8,6 +8,8 @@ TagManager:
   - PlayerBullet
   - EnemyBullet
   - PlayerHitbox
+  - Foreground
+  - PlayerArea
   layers:
   - Default
   - TransparentFX

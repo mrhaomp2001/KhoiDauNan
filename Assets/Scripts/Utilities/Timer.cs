@@ -33,4 +33,9 @@ public class Timer : MonoBehaviour
         runtime = Time.time + timeTotal;
         isCompleted = false;
     }
+    public void setTime(float time)
+    {
+        runtime = Time.time + time;
+        isCompleted = false;
+    }
 }
