@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Owl
+  m_Controller: {fileID: 9100000, guid: cd0fd12fcc0dc5d478b62e207360455d, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: c5b5e323fb160684b8d7996445e9e31e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fa3c3fa016ac4184ea2a997497b35f3c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 91c3777a6c7631b469d3bd2dc3190133, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f7b7ffc683580c74db718fe106f43850, type: 2}
