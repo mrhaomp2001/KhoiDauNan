@@ -59,3 +59,6 @@ TagManager:
   - name: Bullet
     uniqueID: 3020227869
     locked: 0
+  - name: Sign
+    uniqueID: 2717622035
+    locked: 0

@@ -274,6 +274,8 @@ MonoBehaviour:
   speed: 2
   destroyGameObject: {fileID: 6926664251081373844}
   rb: {fileID: 6926664251081373842}
+  isLookAtPlayerStart: 0
+  isLookAtPlayerUpdate: 0
 --- !u!114 &6926664251081373844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,7 +290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 6926664251081373841}
   destroyByTime: 1
-  destroyEffect: {fileID: 0}
+  destroyEffect: {fileID: 1336724933654279147, guid: 885ef39646a00584ebc0c6bf734c7860, type: 3}
 --- !u!114 &6926664251081373841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,7 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runtime: 0
   isCompleted: 0
-  timeTotal: 60
+  timeTotal: 2
   unityEvent:
     m_PersistentCalls:
       m_Calls: []

@@ -126,7 +126,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3547193465014146998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.15, y: -3.05, z: 0}
+  m_LocalPosition: {x: 2, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3547193466334101354}
@@ -156,7 +156,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3547193465248238977}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.84686565, y: 6.791213, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3547193465408996784}
@@ -189,7 +189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3547193465262639398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.34, y: 3.81, z: 0}
+  m_LocalPosition: {x: -2, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3547193466334101354}
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 0}
   destroyByTime: 0
-  destroyEffect: {fileID: 0}
+  destroyEffect: {fileID: 3528516972245142116, guid: 70a7b839d4b3dda43990c905e6e0164f, type: 3}
 --- !u!1 &3547193466247162446
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 3547193466247162416}
   shootRate: 2
-  enemyBulletGroup: {fileID: 6051035489128746117, guid: 5dea2c463bcc90f41b1ca6990f08c481, type: 3}
+  enemyBulletGroup: {fileID: 2411142175311801754, guid: 9befb1de57117bc4db5a9af820d23dfc, type: 3}
   transformEnemy: {fileID: 3547193465408996784}
   enemyMovement: {fileID: 3547193466334101355}
 --- !u!114 &3547193466247162416

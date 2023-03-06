@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 6060030738912952717}
   shootRate: 2
-  enemyBulletGroup: {fileID: 6051035489128746117, guid: 5dea2c463bcc90f41b1ca6990f08c481, type: 3}
+  enemyBulletGroup: {fileID: 8574066988529034712, guid: dbbac3676d279c14c88746e8d32d62cb, type: 3}
   transformEnemy: {fileID: 6060030740487155213}
   enemyMovement: {fileID: 6060030739025188054}
 --- !u!114 &6060030738912952717
@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6060030740044719679}
   m_Layer: 0
-  m_Name: Cwl
+  m_Name: Owl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,7 +145,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6060030740044719676}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.84686565, y: 6.791213, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6060030740487155213}
@@ -178,7 +178,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6060030740097426075}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.34, y: 3.81, z: 0}
+  m_LocalPosition: {x: -3, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6060030739025188055}
@@ -253,7 +253,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.022633195, y: -0.4526682}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -296,7 +296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 0}
   destroyByTime: 0
-  destroyEffect: {fileID: 0}
+  destroyEffect: {fileID: 3528516972245142116, guid: 70a7b839d4b3dda43990c905e6e0164f, type: 3}
 --- !u!1 &6060030740880702475
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,7 +321,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6060030740880702475}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.15, y: -3.05, z: 0}
+  m_LocalPosition: {x: 3, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6060030739025188055}

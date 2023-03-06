@@ -108,7 +108,7 @@ Transform:
   m_GameObject: {fileID: 5838747210774333791}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 879148848044072668}
   m_Father: {fileID: 5838747210977975022}
@@ -194,7 +194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5838747210977975017}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.64, y: 0.15, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5838747210774333776}
@@ -254,6 +254,8 @@ MonoBehaviour:
   speed: 2
   destroyGameObject: {fileID: 5838747210977975018}
   rb: {fileID: 5838747210977975020}
+  isLookAtPlayerStart: 0
+  isLookAtPlayerUpdate: 0
 --- !u!114 &5838747210977975018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,7 +270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 5838747210977975023}
   destroyByTime: 1
-  destroyEffect: {fileID: 0}
+  destroyEffect: {fileID: 1336724933654279147, guid: 885ef39646a00584ebc0c6bf734c7860, type: 3}
 --- !u!114 &5838747210977975023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,7 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runtime: 0
   isCompleted: 0
-  timeTotal: 60
+  timeTotal: 2
   unityEvent:
     m_PersistentCalls:
       m_Calls: []

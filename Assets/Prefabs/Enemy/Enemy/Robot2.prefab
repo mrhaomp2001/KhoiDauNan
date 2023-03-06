@@ -185,8 +185,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5193505108277456155}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.84686565, y: 6.791213, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5193505108393125162}
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 0}
   destroyByTime: 0
-  destroyEffect: {fileID: 0}
+  destroyEffect: {fileID: 3528516972245142116, guid: 70a7b839d4b3dda43990c905e6e0164f, type: 3}
 --- !u!1 &5193505109292026580
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 5193505109292026538}
   shootRate: 2
-  enemyBulletGroup: {fileID: 6051035489128746117, guid: 5dea2c463bcc90f41b1ca6990f08c481, type: 3}
+  enemyBulletGroup: {fileID: 5624022041873831297, guid: 0ac15e441b37f8646b6a5ff94619bb4a, type: 3}
   transformEnemy: {fileID: 5193505108393125162}
   enemyMovement: {fileID: 5193505109347573745}
 --- !u!114 &5193505109292026538

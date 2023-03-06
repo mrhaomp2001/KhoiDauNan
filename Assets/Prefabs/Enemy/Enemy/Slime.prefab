@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 6082758630404626596}
   shootRate: 2
-  enemyBulletGroup: {fileID: 6051035489128746117, guid: 5dea2c463bcc90f41b1ca6990f08c481, type: 3}
+  enemyBulletGroup: {fileID: 2210271580498849660, guid: 1cbd4b308e885f14096898a8560bd1b6, type: 3}
   transformEnemy: {fileID: 6082758631109981988}
   enemyMovement: {fileID: 6082758630424448511}
 --- !u!114 &6082758630404626596
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 0}
   destroyByTime: 0
-  destroyEffect: {fileID: 0}
+  destroyEffect: {fileID: 3528516972245142116, guid: 70a7b839d4b3dda43990c905e6e0164f, type: 3}
 --- !u!1 &6082758631485029298
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,7 +274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6082758631537737494}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -288,7 +288,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6082758631537737493}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.43, y: 9.05, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6082758631109981988}
