@@ -9,6 +9,8 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private Transform transformEnemy;
     [SerializeField] private float speed;
     [SerializeField] private bool canMove = false;
+    [SerializeField] private Transform transformEnemySprite;
+
 
     [Header(" >> Move 2: ")]
     [SerializeField] private bool isMoveRight;
@@ -75,10 +77,14 @@ public class EnemyMovement : MonoBehaviour
         if (isMoveRight)
         {
             rbEnemy.velocity = new Vector2(speed, rbEnemy.velocity.y);
+            transformEnemySprite.localScale = new Vector3(1f, 1f);
+
         }
         else
         {
             rbEnemy.velocity = new Vector2(-speed, rbEnemy.velocity.y);
+            transformEnemySprite.localScale = new Vector3(-1f, 1f);
+
         }
         #endregion
 
@@ -90,6 +96,7 @@ public class EnemyMovement : MonoBehaviour
         if (transformEnemy.position.y <= downRightCap.position.y)
         {
             isMoveUp = true;
+
         }
 
         if (isMoveUp)

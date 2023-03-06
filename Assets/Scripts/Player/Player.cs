@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     [SerializeField] private FixedJoystick fixedJoystick;
 
     [Header(" >> Player bullet: ")]
-    [SerializeField] private Timer timerShootRate;
+    [SerializeField] private Timer timerShootCooldown;
     [SerializeField] private Transform transformFirePoint;
     [SerializeField] private GameObject pistonBullet;
 
@@ -50,10 +50,10 @@ public class Player : MonoBehaviour
 
     public void shoot()
     {
-        if (timerShootRate.IsCompleted)
+        if (timerShootCooldown.IsCompleted)
         {
             Instantiate(pistonBullet, transformFirePoint.position, transformFirePoint.rotation);
-            timerShootRate.setTime();
+            timerShootCooldown.setTime();
         }
     }
 

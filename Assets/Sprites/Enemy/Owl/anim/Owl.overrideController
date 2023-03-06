@@ -7,9 +7,7 @@ AnimatorOverrideController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Owl
-  m_Controller: {fileID: 9100000, guid: cd0fd12fcc0dc5d478b62e207360455d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3a331b595748e0d49aa5d6a12c15144e, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: c5b5e323fb160684b8d7996445e9e31e, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: fa3c3fa016ac4184ea2a997497b35f3c, type: 2}
-  - m_OriginalClip: {fileID: 7400000, guid: 91c3777a6c7631b469d3bd2dc3190133, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: f7b7ffc683580c74db718fe106f43850, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 7009858fda85fc740bd436fce42c8a6d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 97fc613e5dfe3a749b6ae503015bf8e1, type: 2}
